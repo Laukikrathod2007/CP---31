@@ -19,6 +19,7 @@ public:
 };
 
 //Brute force approach
+
 class Solution {
 public:
     bool isSequential(int num) {
@@ -30,7 +31,6 @@ public:
         }
         return true;
     }
-
     vector<int> sequentialDigits(int low, int high) {
         vector<int> ans;
 
