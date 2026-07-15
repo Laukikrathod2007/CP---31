@@ -6,7 +6,7 @@ public:
         if (!node) return;
 
         if (d == lvl.size())
-            lvl.({});
+            lvl.push_back({});
 
         lvl[d].push_back(node->val);
 
