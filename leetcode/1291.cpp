@@ -42,6 +42,3 @@ public:
         return ans;
     }
 };
-
-
-clear
