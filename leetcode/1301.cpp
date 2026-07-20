@@ -46,6 +46,8 @@ public:
                     ways += nextWays[j + 1];
                 }
 
+
+                
                 int value = (cell == 'E') ? 0 : cell - '0';
 
                 currScore[j] = best + value;
