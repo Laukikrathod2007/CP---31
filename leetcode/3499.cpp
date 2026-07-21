@@ -53,3 +53,44 @@ public:
         return ans;
     }
 };
+
+
+//optimal
+class Solution {
+public:
+    int maxActiveSectionsAfterTrade(string s) {
+
+        int n = s.size();
+
+        int ones = 0;
+        int best = 0;
+
+        int prevZero = -1;
+        bool hasOne = false;
+
+        int i = 0;
+
+        while (i < n) {
+
+            int j = i;
+            while (j < n && s[j] == s[i]) j++;
+
+            int len = j - i;
+
+            if (s[i] == '1') {
+                ones += len;
+                hasOne = true;
+            } else {
+                if (prevZero != -1 && hasOne)
+                    best = max(best, prevZero + len);
+
+                prevZero = len;
+                hasOne = false;
+            }
+
+            i = j;
+        }
+
+        return ones + best;
+    }
+};
