@@ -95,7 +95,7 @@ public:
             }
             int leftLen=zeroRight[lidx]-max(zeroLeft[lidx],l)+1;
             int rightLen=min(r,zeroRight[ridx])-zeroLeft[ridx]+1;
-            if(lidx+1==ridx){
+            if(lidx+1==ri
                 ans.push_back(cnt1+leftLen+rightLen);
                 continue;
             }
