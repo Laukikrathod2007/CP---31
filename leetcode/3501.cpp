@@ -96,7 +96,7 @@ public:
             int leftLen=zeroRight[lidx]-max(zeroLeft[lidx],l)+1;
             int rightLen=min(r,zeroRight[ridx])-zeroLeft[ridx]+1;
             if(lidx+1==ridx){
-                ans.push_back(cnt1+leftLen+rightLen);
+                ans.push_back(cnt1++rightLen);
                 continue;
             }
             int leftContri=leftLen+zeroBlocks[lidx+1];
