@@ -104,6 +104,6 @@ public:
             int middleContri=st.query(lidx+1,ridx-2);
             ans.push_back(cnt1+max(leftContri,max(rightContri, middleContri)));
         }
-        return ans;
+        return 
     }
 };
