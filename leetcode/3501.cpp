@@ -90,12 +90,12 @@ public:
             int lidx=lowerBound(zeroRight,l);
             int ridx=upperBound(zeroLeft,r)-1;
             if(lidx>m-1 || ridx<0 || lidx>=ridx){
-                ans.push_back(cnt
+                ans.push_back(cnt1);
                 continue;
             }
             int leftLen=zeroRight[lidx]-max(zeroLeft[lidx],l)+1;
             int rightLen=min(r,zeroRight[ridx])-zeroLeft[ridx]+1;
-            if(lidx+1==ri
+            if(lidx+1==ridx){
                 ans.push_back(cnt1+leftLen+rightLen);
                 continue;
             }
@@ -104,6 +104,6 @@ public:
             int middleContri=st.query(lidx+1,ridx-2);
             ans.push_back(cnt1+max(leftContri,max(rightContri, middleContri)));
         }
-        return 
+        return ans;
     }
 };
