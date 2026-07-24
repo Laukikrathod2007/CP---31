@@ -71,22 +71,9 @@ public class MethodOverloadingDemo {
         sc.calculate(20, 10);         // Addition
         sc.calculate(20, 10, '-');    // Subtraction
 
-        System.out.println("\nScientific Operations:");
-        sc.calculate(30.0, "sin");
-        sc.calculate(60.0, "cos");
-        sc.calculate(45.0, "tan");
-        sc.calculate(100.0, "log");
-
-        int[][] matrix1 = {
-                {1, 2},
-                {3, 4}
+        System.out.println("\nScientific Operations:");                {7, 8}
         };
-
-        int[][] matrix2 = {
-                {5, 6},
-                {7, 8}
-        };
-
+wefbskdfhjKdn cm,SD
         sc.calculate(matrix1, matrix2);
     }
 }
