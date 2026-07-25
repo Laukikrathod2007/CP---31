@@ -74,6 +74,3 @@ public class MethodOverloadingDemo {
         System.out.println("\nScientific Operations:");                {7, 8}
         };
 wefbskdfhjKdn cm,SD
-        sc.calculate(matrix1, matrix2);
-    }
-}
