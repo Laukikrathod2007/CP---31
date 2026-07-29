@@ -14,5 +14,3 @@ class Solution {
         return (max - 1) * (max2 - 1);
     }
 }
-
-dlksdjfk
