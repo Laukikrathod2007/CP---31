@@ -10,7 +10,7 @@ class Solution {
                 max2 = nums[i];
             }
         }
-
+extaera
         return (max - 1) * (max2 - 1);
     }
 }
