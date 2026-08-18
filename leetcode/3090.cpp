@@ -17,11 +17,4 @@ public:
     }
 };
 
-ds
-f
-s
-f
-s
-f
-sf
 
