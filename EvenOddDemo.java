@@ -4,15 +4,6 @@ class EvenThread extends Thread {
         for (int i = 2; i <= 20; i += 2) {
             System.out.println("Even Thread: " + i);
 
-            try {
-                Thread.sleep(100);
-            } catch (InterruptedException e) {
-                System.out.println(e);
-            }
-        }
-    }
-}
-
 class OddThread extends Thread {
 
     public void run() {
