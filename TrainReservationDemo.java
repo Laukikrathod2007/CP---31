@@ -1,7 +1,7 @@
 class TrainReservation {
 
     private int availableTickets;
-
+2   
     // Constructor
     TrainReservation(int tickets) {
         availableTickets = tickets;
