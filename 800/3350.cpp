@@ -14,6 +14,4 @@ public:
             if (sumDigits(nums[i]) == i)
                 return i;
         }
-        return -1;
-    }
-};
+        return -1
